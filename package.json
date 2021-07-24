@@ -1,0 +1,23 @@
+{
+  "name": "noisy-neighbors",
+  "version": "1.0.0",
+  "description": "music for neighbors ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxdelena/Noisy-Neighbors.git"
+  },
+  "author": "Maxwell Ibrahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxdelena/Noisy-Neighbors/issues"
+  },
+  "homepage": "https://github.com/maxdelena/Noisy-Neighbors#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
