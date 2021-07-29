@@ -1,4 +1,5 @@
-const postEntry = require('../models/bandPost')
+
+const PostEntry = require('../models/bandPost')
 const Users = require('../models/users')
 
 function index(req, res) {
@@ -7,12 +8,30 @@ function index(req, res) {
   });
 }
 
-async function index(req, res) {
-    let artistData = await "https://rest.bandsintown.com/artists/{{artist_name}}/?app_id=yOUrSuP3r3ven7aPp-id"
-    let eventData = await "https://rest.bandsintown.com/artists/{{artist_name}}/events/?app_id=yOUrSuP3r3ven7aPp-id"
-        res.render('posts/index', {
-            postEntry, user: req.user, artistData, eventData
-        })
+//index2=createpost//saves in db
+async function index2(req, res) {
+
+    try {
+        let post = new PostEntry(req.body);
+        let result = await post.save();
+        res.redirect('/posts/index');
+        return result;
+    } catch (err) {
+        console.log(err);
+    }
 }
 
-module.exports = { index};
+function getPostEntry(req, res) {
+  PostEntry.find({}, function(err, posts) {
+    res.render('posts/index', { posts , user: req.user});
+  });
+}
+
+function retrieveForm(req, res) {
+    res.render('posts/createPost')
+}
+
+
+
+
+module.exports = { index, index2, getPostEntry, retrieveForm};

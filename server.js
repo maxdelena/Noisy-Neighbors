@@ -18,6 +18,7 @@ require("./config/passport");
 
 const homepage = require('./routes/index');
 const posts = require('./routes/posts');
+const search = require('./routes/searchBand')
 
 //view engine 
 app.set('view engine', 'ejs');
@@ -49,6 +50,7 @@ app.use(passport.session());
 //ROUTES
 app.use('/', homepage);
 app.use('/posts', posts);
+app.use('/search', search);
 
 
 
