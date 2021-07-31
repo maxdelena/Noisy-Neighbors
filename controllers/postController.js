@@ -3,8 +3,10 @@ const PostEntry = require('../models/bandPost')
 const Users = require('../models/users')
 
 function index(req, res) {
-  Users.find({}, function(err, creators) {
-    res.render('posts/index', { creators , user: req.user});
+  PostEntry.find({}, function(err, Posts) {
+    console.log("Executed");
+    console.log(Posts);
+    res.render('posts/index', { Posts , user: req.user});
   });
 }
 

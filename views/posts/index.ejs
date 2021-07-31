@@ -1,16 +1,72 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>all posts</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"defer></script>
+    <title> Noisy Neighbors All Posts </title>
 </head>
 <body>
+
     <h1>see all posts</h1>
     <a href="/logout">log out</a>
     <a href="http://localhost:3000/posts/form">createPost</a>
     <a href="http://localhost:3000/posts/all">See all posts</a>
     <a href="http://localhost:3000/user">user profile</a>
+
+    <div class="header" >
+        <img src="/images/nn_logo.svg"  class="logo">
+        
+        
+            <div class="search_bar">
+              <input type="text"  />
+              <input type="button" value="Search" />
+            </div>
+            <div class="icon_nav">
+                <a href="profile"><img id="profile_icon" src="/images/profile2.svg"></a>
+                <a href="#"><img id="search_icon" src="/images/search2.svg"></a>
+            </div>
+         
+    
+        
+    </div>
+    
+    <div id="header_spacer">
+    
+    </div>
+    <%Posts.forEach(function(post) { %>
+    <div class="column">
+        <div class="container_row main_container" o>
+            <div class="container_column">
+                <p class="artist_name"><%=post.artistName %></p>
+                <p class="event_date"><%=post.eventDate %></p>
+            </div>
+            <div class="container_column">
+                <p class="venue_name"><%=post.venueName %></p>
+                <p class="venue_location"><%=post.venueLocation %></p>
+                <p><%=post._id %></p>
+            </div>
+        </div>
+    
+        <div  class="container_row hidden_container">
+            <div class="container_column container_spacer">
+                <p class="event_name"><%=post.eventName %></p>
+                <p class="event_time"><%=post.eventTime %></p>
+                <a id href="#">Buy Tickets </a>
+            </div>
+            <div class="container_column container_spacer">
+                <p class="exact_address"> 9081 N Santa Monica Blvd, West Hollywood, CA 90069</p>
+            </div>
+        </div>
+    </div>
+    <% }); %>
+    </div>
+    
 </body>
 </html>
