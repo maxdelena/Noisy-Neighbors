@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require("express-session");
 const morgan = require('morgan');
-
+const methodOverride = require('method-override')
 const passport = require("passport");
 
 
@@ -19,13 +19,14 @@ require("./config/passport");
 const homepage = require('./routes/index');
 const posts = require('./routes/posts');
 const search = require('./routes/searchBand')
+const user = require('./routes/userRoute')
 
 //view engine 
 app.set('view engine', 'ejs');
 
 //MIDDLEWARE
 
-
+app.use(methodOverride('_method'))
 app.use(express.static('public'));
 app.use(morgan('dev'));
 app.use(express.json());
@@ -51,6 +52,7 @@ app.use(passport.session());
 app.use('/', homepage);
 app.use('/posts', posts);
 app.use('/search', search);
+app.use('/user', user);
 
 
 

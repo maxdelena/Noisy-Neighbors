@@ -7,8 +7,9 @@
     <title>user profile</title>
 </head>
 <body>
-    <a href="">get user profile</a>
-    <a href="">update user profile</a>
-    <a href="">delete user profile</a>
+    <% users.forEach(user =>{%>
+        <a href="user/<%=user._id%>"><%=user.name%></a><br/>
+    <%})%>
+    
 </body>
 </html>
