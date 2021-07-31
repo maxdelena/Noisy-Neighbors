@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noisy Neighbors</title>
+    <title>user profile</title>
 </head>
 <body>
-    <h1>welcome home bands</h1>
-    <a href="/auth/google">login with google</a>
-    <a href="/logout">log out</a>
+    <% users.forEach(user =>{%>
+        <a href="user/<%=user._id%>"><%=user.name%></a><br/>
+    <%})%>
     
 </body>
 </html>
