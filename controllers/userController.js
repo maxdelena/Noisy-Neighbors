@@ -46,7 +46,7 @@ async function updateUser(req, res) {
 
         let result = await Users.findOneAndUpdate(id, update)
         console.log(result)
-        res.render("userprofile/userPage", {user:result});
+        res.redirect(`/user/${id}`);
         
     }
     catch (err) {
