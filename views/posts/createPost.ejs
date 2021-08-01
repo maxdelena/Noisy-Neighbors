@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css" />
     <title>createPost</title>
-    <form action="/posts/" method="post">
-        <label for="artistName">Artist</label>
-        <input type="text" name="artistName" id="">
-        <label for="venueName">Venue</label>
-        <input type="text" name="venueName" id="">
-        <label for="venueLocation">Location</label>
-        <input type="text" name="venueLocation" >
-        <label for="eventDate">Date</label>
-        <input type="datetime-local" name="eventDate" id="">
-        <input type="submit" value="Create a post">
-    </form>
+
+<script>
+    $(function(){
+        $(".header").load
+    })
+
+</script>
+<div class="form_container">
+    <div class="form_fields">
+        <form action="/posts/" method="post">
+
+            <label for="artistName"></label>
+            <input type="text" name="artistName" id="artist" placeholder="Artist">
+
+            <label for="venueName"></label>
+            <input type="text" name="venueName" id="venue" placeholder="Venue">
+
+            <label for="venueLocation"></label>
+            <input type="text" name="venueLocation" id="location" placeholder="Location">
+
+            <label for="eventDate"></label>
+            <input type="datetime-local" name="eventDate" id="date" placeholder="Date">
+
+            <input type="submit" value="create a post" id="button" placeholder="">
+        </form>
+    </div>
+</div>
+
 </head>
 <body>
     

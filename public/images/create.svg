@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="30px" viewBox="0 0 27 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Edit Box Out</title>
+    <defs>
+        <rect id="path-1" x="0" y="8.4246212" width="21" height="21" rx="4"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="edit" transform="translate(-51.000000, -39.000000)">
+            <g id="Edit-Box-Out" transform="translate(51.000000, 39.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <rect stroke="#FFFFFF" x="0.5" y="8.9246212" width="20" height="20" rx="4"></rect>
+                <rect id="Rectangle" fill="#73A6C6" transform="translate(18.707107, 8.131728) rotate(-315.000000) translate(-18.707107, -8.131728) " x="14.7071068" y="0.631727984" width="8" height="15"></rect>
+                <g id="Pencil" transform="translate(15.810995, 13.267715) rotate(-135.000000) translate(-15.810995, -13.267715) translate(13.785853, 3.865022)" fill="#FFFFFF">
+                    <path d="M0.00458876782,2.59556336 L4.00458877,2.59556336 L4.00458877,15.5955634 C3.11903709,15.5058671 2.45237042,15.461019 2.00458877,15.461019 C1.55680712,15.461019 0.89014045,15.5058671 0.00458876782,15.5955634 L0.00458876782,2.59556336 Z" id="Rectangle" transform="translate(2.004589, 9.095563) rotate(-180.000000) translate(-2.004589, -9.095563) "></path>
+                    <path d="M-5.68434189e-14,16.9053361 C0.612577907,16.4487317 1.26644983,16.223561 1.96161578,16.2298239 C2.65678172,16.2360869 3.35268363,16.4734181 4.0493215,16.9418176 L4.05028345,18.8053864 L0.0420745643,18.8033626 L-5.68434189e-14,16.9053361 Z" id="Rectangle" transform="translate(2.025142, 17.517542) rotate(-180.000000) translate(-2.025142, -17.517542) "></path>
+                    <path d="M2.02514172,-2.84217094e-14 C2.36734809,-2.84217094e-14 4.00458877,2.0315803 4.00458877,2.0315803 C4.00458877,2.0315803 3.00769184,1.93721621 2.00458877,1.93721621 C1.00771122,1.93721621 0.00458876782,2.0315803 0.00458876782,2.0315803 C0.00458876782,2.0315803 1.68293536,-2.84217094e-14 2.02514172,-2.84217094e-14 Z" id="Triangle"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
