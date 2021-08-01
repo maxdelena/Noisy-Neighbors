@@ -27,7 +27,7 @@ app.set('view engine', 'ejs');
 //MIDDLEWARE
 
 app.use(methodOverride('_method'))
-app.use(express.static(__dirname+'public'));
+app.use(express.static(__dirname+'/public'));
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
