@@ -38,17 +38,19 @@ body {
 }
 
 .icon_nav > a > img {
-    width: 0;
+    margin: 5px;
 }
 
-#profile_icon {
-    padding: 6px px;
-    margin: 0;
+#profile_icon > img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 6px;
 }
 
-#search_icon {
-    padding: 4px 7px;
-    margin: 0;
+#search_icon > img {
+    width: 30px;
+    height: 30px;
 }
 
 /*search bar*/
@@ -195,15 +197,143 @@ p {
 }
 
 #button {
+    margin-top: 25px;
+    padding: 4px;
     display: flex;
     flex-direction: row;
     background: transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: #D9E4EE;
     background-color: #1E3F66;
     color: #D9E4EE;
     justify-content: right;
 }
 
+#header_spacer2 {
+    height: 120px;
+}
 
-  
+/* Google log in */
+
+.header_login{
+    background-color: #73A6C6;
+    box-shadow: 1px, 1px,4px, 0 rgba(0,0,0,1);
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-wrap: none;
+    justify-content: space-between;
+}
+
+.header_login .logo_login{
+    display: block;
+    float: left;
+    font-size:2em;
+    padding: 10px 30px;
+}
+
+#header_spacer_login {
+    height: 120px;
+}
+
+.login_form a {
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #D9E4EE;
+    background-color: #1E3F66;
+    color: #D9E4EE;
+    justify-content: center;
+    text-decoration: none;
+    min-width: 100px;
+    max-width: 100px;
+    margin: 0 auto; 
+}
+
+/* user */
+
+.user_list {
+    margin: 20px;
+}
+
+.user_list a {
+    margin-left: 110px;
+    text-decoration: none;
+}
+
+/* Profile */
+
+.profile_form {
+    display: flex;
+    border: 2px solid #1E3F66;
+    padding-left: 10px;
+    border-radius: 15px;
+    background-color:#73A6C6;
+    color:white;
+    height: 260px;
+    flex-direction: column;
+    max-width: 400px;
+    width: 30%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.profile_form h2 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.profile_form h5 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+#header_spacer_profile {
+    height: 120px;
+}
+
+#profile_button {
+    margin-top: 25px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    border-radius: 10px;
+    border-color: #D9E4EE;
+    background-color: #c51212;
+    color: #D9E4EE;
+}
+
+#profile_image {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#edit_profile {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 15px;
+}
+
+#delete_user {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#button_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+#billybob {
+    flex-grow: 1;
+}

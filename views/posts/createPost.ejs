@@ -11,12 +11,23 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>createPost</title>
 
-<script>
-    $(function(){
-        $(".header").load
-    })
+    <div class="header">
+        <a href="http://localhost:3000/posts/index" src="/images/neighbors_music_logo.svg"  class="logo"></a>
+        
+        
+            <div class="search_bar">
+              <input type="text"  />
+              <input type="button" value="Search" />
+            </div>
+            <div class="icon_nav">
+                <a href="http://localhost:3000/user" id="profile_icon" src="/images/profile.svg"></a>
+                <a href="http://localhost:3000/posts/form" id="search_icon" src="/images/create.svg"></a>
+            </div>
+        
+    </div>
+    
+    <div id="header_spacer2"></div>
 
-</script>
 <div class="form_container">
     <div class="form_fields">
         <form action="/posts/" method="post">

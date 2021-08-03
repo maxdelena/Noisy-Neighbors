@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Profile Copy 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-67.000000, -67.000000)">
+            <g id="Profile-Copy-2" transform="translate(67.000000, 67.000000)">
+                <circle id="Oval" stroke="#FFFFFF" cx="12.5" cy="12.5" r="12"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="12.5" cy="7.5" r="4.5"></circle>
+                <path d="M22,20.1860465 L22,20.1860465 L22,20.1860465 C18.122394,23.3953488 15.122394,25 13,25 C10.877606,25 7.66639738,23.3953488 3.36637405,20.1860465 L3.50159857,19.930774 C6.18841663,14.8586861 12.4782527,12.9250428 17.5503407,15.6118608 C19.4765523,16.6322257 21.0331759,18.2324123 22,20.1860465 Z" id="Triangle" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
