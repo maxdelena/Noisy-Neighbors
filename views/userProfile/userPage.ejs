@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
     <title>user page</title>
 </head>
 <body>
-    <h1>user1</h1>
-    <h1><%=user.name%></h1>
-    <h1><%=user.email%></h1>
 
-    <a href="/user/form/<%= user._id%>">update user profile</a>
+    <header class="header_login">
+        <a href="http://localhost:3000/posts/index"><img src="/images/neighbors_music_logo.svg" class="logo_login"></a>  
+
+        <div class="icon_nav">
+            <a href="http://localhost:3000/user" id="profile_icon"><img src="/images/large_profile.svg"></a>
+            <a href="http://localhost:3000/posts/form" id="search_icon"><img src="/images/create.svg"></a>
+        </div>
+    </header>
+
+    <div id="header_spacer_profile"></div>
+
+    <div class="profile_form">
+        <img src="/images/large_profile.svg" width="40" id="profile_image">
+
+        <h5>username:</h5>
+        <h2><%=user.name%></h2>
+        <h5>email:</h5>
+        <h2 id="billybob"><%=user.email%></h2>
+
+        <div id="button_container">
+            <a href="/user/form/<%= user._id%>" id="edit_profile"><img src="/images/create.svg">edit profile</a>
+
+            <form method="post"action="/user/<%=user._id%>?_method=DELETE" id="delete_user">
+              <button type="submit" id="profile_button">delete profile</button>
+            </form>
+        </div>
+
+        
+        
+    </div>
+
+    
 
   
-    <form method="post"action="/user/<%=user._id%>?_method=DELETE">
-        <button type="submit">delete</button>
-    </form>
+    
 </body>
 </html>
