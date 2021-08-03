@@ -17,37 +17,29 @@
     <!--<a href="/logout">log out</a>
     <a href="http://localhost:3000/posts/form">createPost</a>-->
     
-    <div class="header">
-        <a href="http://localhost:3000/posts/index" src="/images/neighbors_music_logo.svg"  class="logo"></a>
-        
-        
-            <div class="search_bar">
-              <input type="text"  />
-              <input type="button" value="Search" />
-            </div>
-            <div class="icon_nav">
-                <a href="http://localhost:3000/user"><img id="profile_icon" src="/images/profile.svg"></a>
-                <a href="http://localhost:3000/posts/form"><img id="search_icon" src="/images/create.svg"></a>
-            </div>
-         
-    
-        
-    </div>
+    <header class="header_login">
+        <a href="http://localhost:3000/posts/index"><img src="/images/neighbors_music_logo.svg" class="logo_login"></a>  
+
+        <div class="icon_nav">
+            <a href="http://localhost:3000/user" id="profile_icon"><img src="/images/large_profile.svg"></a>
+            <a href="http://localhost:3000/posts/form" id="create_icon"><img src="/images/create.svg"></a>
+        </div>
+    </header>
     
     <div id="header_spacer">
     
     </div>
     <%Posts.forEach(function(post) { %>
     <div class="column">
-        <div class="container_row main_container" o>
+        <div class="container_row main_container">
             <div class="container_column">
-                <p class="artist_name"><%=post.artistName %></p>
-                <p class="event_date"><%=post.eventDate %></p>
+                <p class="artist_name"><%=post.artistName%></p>
+                <p class="event_date"><%=post.eventDate%></p>
             </div>
             <div class="container_column">
                 <p class="venue_name"><%=post.venueName %></p>
                 <p class="venue_location"><%=post.venueLocation %></p>
-                <p><%=post._id %></p>
+                <!--<p><%=post._id %></p>-->
             </div>
         </div>
     
@@ -55,7 +47,7 @@
             <div class="container_column container_spacer">
                 <p class="event_name"><%=post.eventName %></p>
                 <p class="event_time"><%=post.eventTime %></p>
-                <a id href="#">Buy Tickets </a>
+                <a id href="#">Buy Tickets</a>
             </div>
             <div class="container_column container_spacer">
                 <p class="exact_address"> 9081 N Santa Monica Blvd, West Hollywood, CA 90069</p>
