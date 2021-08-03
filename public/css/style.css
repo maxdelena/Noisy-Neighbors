@@ -46,9 +46,10 @@ body {
     height: 25px;
     position: relative;
     top: 6px;
+    right: 5px;
 }
 
-#search_icon > img {
+#create_icon > img {
     width: 30px;
     height: 30px;
 }
@@ -99,7 +100,7 @@ div.search_bar
     border-radius: 15px;
     background-color:#73A6C6;
     color:white;
-    height: 100px;
+    height: 120px;
 }
 
 .container_column {
@@ -312,6 +313,7 @@ p {
     display: flex;
     justify-content: center;
     margin: 10px 0;
+    padding-top: 6px;
 }
 
 #edit_profile {
@@ -319,6 +321,7 @@ p {
     color: white;
     position: relative;
     top: 15px;
+    font-size: 14px;
 }
 
 #delete_user {
@@ -334,6 +337,6 @@ p {
     align-self: flex-end;
 }
 
-#billybob {
+#fg {
     flex-grow: 1;
 }
