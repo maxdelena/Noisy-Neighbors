@@ -110,7 +110,7 @@ div.search_bar
 .hidden_container {
     position: relative;
     top: -30px;
-    height: 150px;
+    height: 80px;
     z-index: -1;
 }
 
@@ -255,6 +255,12 @@ p {
     margin: 0 auto; 
 }
 
+.login_form .logout {
+    background-color:#73A6C6 ;
+    color: white;
+    border: 2px solid #1E3F66;
+}
+
 /* user */
 
 .user_list {
@@ -275,7 +281,7 @@ p {
     border-radius: 15px;
     background-color:#73A6C6;
     color:white;
-    height: 260px;
+    height: 320px;
     flex-direction: column;
     max-width: 400px;
     width: 30%;
@@ -339,4 +345,8 @@ p {
 
 #fg {
     flex-grow: 1;
+}
+
+#logout_spacer {
+    height: 5px;
 }
