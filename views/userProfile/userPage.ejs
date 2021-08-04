@@ -27,8 +27,8 @@
         <h2><%=user.name%></h2>
         <h5>email:</h5>
         <h2 id="fg"><%=user.email%></h2>
-        <!--<h5>interest:</h5>
-        <h2><%=user.interest%></h2>-->
+        <h5>interest:</h5>
+        <h2><%=user.interest%></h2>
 
         <div id="button_container">
             <a href="/user/form/<%= user._id%>" id="edit_profile"><img src="/images/edit.svg">edit profile</a>
@@ -37,6 +37,10 @@
               <button type="submit" id="profile_button">delete profile</button>
             </form>
         </div>     
+    </div>
+    <div id="logout_spacer"></div>
+    <div class="login_form">
+        <a href="/logout" class="logout">log out</a>
     </div>
 
     
