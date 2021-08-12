@@ -1,10 +1,13 @@
 $(document).ready(function (){
+    $(".main_container").parent().children('.hidden_container').slideUp();
     $(".main_container").click(function (){
-        const isHidden = $(".hidden_container").css("display");
+        const selectedContainer=$(this).parent().children('.hidden_container');
+        
+        const isHidden = $(this).parent().children('.hidden_container').css("display");
         if (isHidden == "none") {
-            $(".hidden_container").slideDown(); 
+            selectedContainer.slideDown(); 
         }else{
-            $(".hidden_container").slideUp();
+            selectedContainer.slideUp();
             }
         })
 

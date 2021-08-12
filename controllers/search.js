@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function index3(req, res) {
-
+    console.log(req);
     let artistName = req.body.artistName;
     let app_id = 'acfb8480bd4f7425b7e9f7081669bea7'
     let resultData 
@@ -9,6 +9,7 @@ async function index3(req, res) {
     axios.get(`https://rest.bandsintown.com/artists/${artistName}/events/?app_id=${app_id}`)
         .then(function (response) {
             resultData = response.data
+            
             const events = [];
             for (let i = 0; i < resultData.length; i++) {
                 const event = {
